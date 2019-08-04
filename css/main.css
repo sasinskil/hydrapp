@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -314,5 +315,98 @@ html {
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #3767AD;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main-header__title {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 80px; }
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.water-glass {
+  position: relative;
+  margin-bottom: 60px; }
+
+.water-glass__counter {
+  position: absolute;
+  top: 45%;
+  left: 120px;
+  font-size: 80px;
+  font-weight: bold; }
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .actions__button {
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    width: 216px;
+    height: 47px;
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px; }
+  .actions__add {
+    font-weight: bold; }
+  .actions__delete {
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #fff; }
+
+.history {
+  width: 100%;
+  background: none;
+  text-align: center; }
+  .history__button {
+    padding: 4px 16px;
+    background: none;
+    border: none;
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
