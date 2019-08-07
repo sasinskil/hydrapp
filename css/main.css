@@ -397,17 +397,21 @@ body {
             box-shadow: none;
     color: #fff; }
 
-.history {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  text-align: center; }
-  .history__button {
-    width: 100%;
-    padding: 12px 16px;
-    background: none;
-    border: none;
-    color: black; }
+.history__button {
+  padding: 8px 16px;
+  width: 160px;
+  background: none;
+  border: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
