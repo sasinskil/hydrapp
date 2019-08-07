@@ -1,8 +1,12 @@
-# hydrapp
+![Homepage screenshot](github/hydrapp.PNG) ![Homepage screenshot](github/hydrapp-history.PNG)
 
-In progress... [Live](https://sasinskil.github.io/hydrapp/)
+# HydrApp
 
-## Technologies used
+Aplikacja **PWA**, która pomoże Ci w codziennym nawadnianiu organizmu !
+
+Sprawdź na żywo -> [Live](https://sasinskil.github.io/hydrapp/) p.s. spróbuj na **telefonie** :sunglasses:
+
+## Wykorzystane technologie
 
 - HTML/HTML5,
 - CSS/SCSS,
