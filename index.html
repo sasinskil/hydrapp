@@ -38,7 +38,7 @@
           d="M219.455 89.25L202.13 262.5H77.8805L58.4555 68.775C80.3305 61.775 113.58 57.05 140.005 78.75C165.555 99.75 197.755 95.9 219.455 89.25Z"
           fill="#2196F3" />
       </svg>
-      <span class="water-glass__counter">0</span>
+      <span class="water-glass__counter"></span>
     </section>
     <section class="actions">
       <button class="actions__button actions__add">dodaj szklankę</button>
@@ -48,6 +48,21 @@
       <button class="history__button"><img src="assets/img/svg/history.svg" alt="notes z klepsydrą"> historia</button>
     </section>
   </main>
+  <div class="history-container">
+    <div class="history-container__hide">
+      <button class="history-container__hide--button"><img src="assets/img/svg/back-arrow.svg" alt="strzałka w lewo"></button>
+    </div>
+      <table class="history-container__table table">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Szklanki</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
