@@ -23,17 +23,25 @@ const historyContainer = document.querySelector('.history-container--js');
 const hideHistoryButton = document.querySelector('.history-container__hide--button-js');
 const tableBody = document.querySelector('.table__body--js');
 
-glassCounter.innerHTML = 0;
+const key = new Date().toISOString().slice(0,10);
+
+if(localStorage.getItem(key)) {
+  glassCounter.innerHTML = localStorage.getItem(key);
+} else {
+  glassCounter.innerHTML = 0;
+}
 
 addGlassButton.addEventListener('click', () => {
   glassCounter.innerHTML = parseInt(glassCounter.innerHTML) + 1;
   waterGlassWater.classList.toggle('water-glass__water--animated');
+  localStorage.setItem(key, glassCounter.innerHTML);
 })
 
 removeGlassButton.addEventListener('click', () => {
   if (parseInt(glassCounter.innerHTML) > 0) {
     glassCounter.innerHTML = parseInt(glassCounter.innerHTML) - 1;
     waterGlassWater.classList.toggle('water-glass__water--animated');
+    localStorage.setItem(key, glassCounter.innerHTML);
   } else {
     alert('Nie możesz już usunąć szklanki ;)');
   }
@@ -41,10 +49,20 @@ removeGlassButton.addEventListener('click', () => {
 
 historyButton.addEventListener('click', () => {
   historyContainer.classList.add('history-container__visible');
+  for( let i = 0 ; i < localStorage.length ; i++) {
+
+    const localStorageValue = localStorage.getItem(localStorage.key(i));
+  
+    tableBody.innerHTML = `
+      <tr>
+        <td>${localStorage.key(i)}</td>
+        <td>${localStorageValue}</td>
+      </tr>
+    `
+  }
 })
 
 hideHistoryButton.addEventListener('click', () => {
   historyContainer.classList.remove('history-container__visible');
 })
-
 
