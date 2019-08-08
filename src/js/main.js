@@ -44,17 +44,21 @@ removeGlassButton.addEventListener('click', () => {
     waterGlassWater.classList.toggle('water-glass__water--animated');
     localStorage.setItem(key, glassCounter.innerHTML);
   } else {
-    alert('Nie możesz już usunąć szklanki ;)');
+    alert('Nie możesz już usunąć ;)');
   }
 })
 
 historyButton.addEventListener('click', () => {
   historyContainer.classList.add('history-container__visible');
+
+  tableBody.innerHTML = "";
+
   for( let i = 0 ; i < localStorage.length ; i++) {
     const localStorageValue = localStorage.getItem(localStorage.key(i));
-    tableBody.innerHTML = `
+    const localStorageKey = localStorage.key(i);
+    tableBody.innerHTML += `
       <tr>
-        <td>${localStorage.key(i)}</td>
+        <td>${localStorageKey}</td>
         <td>${localStorageValue}</td>
       </tr>
     `
