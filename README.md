@@ -9,7 +9,7 @@ Sprawdź na żywo -> [Live](https://sasinskil.github.io/hydrapp/) p.s. spróbuj 
 ## Wykorzystane technologie
 
 - HTML/HTML5,
-- CSS/SCSS,
+- SASS,
 - JavaScript,
 - Gulp,
 - NPM scripts,
